@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import listeners from './index.js';
-import $ from 'jquery'; 
+// import $ from 'jquery'; 
 
 const NUM_ROWS = 4;
 const NUM_COLS = 4;
@@ -11,7 +11,7 @@ const EMPTY_INDEX = NUM_TILES - 1;
 const SHUFFLE_MOVES_RANGE = [60, 80];
 const MOVE_DIRECTIONS = ['up', 'down', 'left', 'right'];
 // var images = ['hagrid.png', 'harry.png', 'hermoine.png'];
-// $('html').css({'background-image': 'url(./' + images[Math.floor(Math.random() * images.length)] + ')'});
+// $('html').css({'background-image': 'url(./' + images[rand(0, images.length)] + ')'});
 
 function rand (min, max) {
   return min + Math.floor(Math.random() * (max - min + 1));
